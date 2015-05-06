@@ -1,0 +1,11 @@
+api:
+    build: api-server-node
+    ports:
+        - "8000:8000"
+    links:
+        - redis
+        - couchdb
+redis:
+    image: redis
+couchdb:
+    image: klaemo/couchdb 
