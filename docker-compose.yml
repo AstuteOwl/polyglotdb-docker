@@ -1,10 +1,11 @@
 api:
     build: api-server-node
     ports:
-        - "8000:8000"
+        - "5000:5000"
     links:
         - redis
         - couchdb
+    command: python Server.py
 redis:
     image: redis
 couchdb:

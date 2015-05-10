@@ -1,4 +1,0 @@
-cython
-falcon
-gevent
-gunicorn
