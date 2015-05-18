@@ -1,5 +1,5 @@
 api:
-    build: api-server-node
+    image: astuteowl/api-server-node
     ports:
         - "5000:5000"
     links:
